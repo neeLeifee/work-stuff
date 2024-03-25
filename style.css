@@ -1,22 +1,38 @@
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
 .header {
-    position: relative;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index:10;
     display: flex;
-    background-color: #0575d5;
+    flex-direction: column;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    height: 525px;
     color: #fff;
 }
 
 .square{
     display: block;
     width: 100%;
+    top: 0;
+    left:0;
     position: absolute;
     margin: 0px auto -100px auto;
 }
 
 .header_bar {
-    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -39,13 +55,36 @@
     width: 100%;
 }
 
-.cnewslogo{
-    width: 10%;
-    position: relative;
-    display: flex;
-    margin: -5% 5% auto auto;
+.cnews_logo{
+    margin: auto 10% auto auto;
 }
 
-.header_logo{
-    display: block;
+.hero{
+    position: relative;
+    padding-top: 120px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background-color: #0575d5;
+}
+
+.hero_container {
+    
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero_content{
+    position: relative;
+}
+
+.elephant{
+    position: relative;
+    left:80px
 }

@@ -1,5 +1,18 @@
+a.text:active,a.text:hover, a.text {
+  text-decoration: none;
+  color: #fff;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
+    background-color: #f1f1f1;
+    position: relative;
 }
 
 .container{
@@ -32,7 +45,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 29%;
+    margin-top: 2%;
+    margin-left: 33%;
     margin-right: 34%;
 }
 
@@ -52,6 +66,7 @@ body{
 }
 
 .hero{
+    color: #fff;
     position: relative;
     padding-top: 120px;
 }
@@ -67,6 +82,7 @@ body{
 }
 
 .hero_container {
+    margin-top: 1%;
     display: flex;
     align-items: flex-start;
 }
@@ -81,8 +97,15 @@ body{
 }
 
 .first_section{
-    position: relative;
     padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 50px;
+    background: #fff;
+    padding: 30px 5% 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .first_section_container{
@@ -91,4 +114,16 @@ body{
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+}
+
+.article_img{
+    border-radius: 10px;
+    max-width: 300px;
+    object-fit: cover;
 }

@@ -14,7 +14,7 @@
                 
                 <ul class="header_bar_text">
                     <li>
-                        <a><h4>Статьи  </h4></a>
+                        <a href="#articles" class="text"><h4>Статьи  </h4></a>
                     </li>
                     <li>
                         <a><h4>Кейсы   </h4></a>
@@ -29,11 +29,16 @@
     </header>
     
     <div class="hero">
-        <img class="square" src="/images/square.png">
+        <div class="square_div">
+            <img class="square" src="/images/square.png">
+        </div>
+        
         <div class="container hero_container">
             <div class="hero_content">
                 <img width="267" height="80" src ="/images/postgress logo_top.svg">
+                <br><br>
                 <h1>Миграция на <br> Postgres Pro</h1>
+                <br>
                 <h2>Почему крупнейшие <br> компании страны выбирают <br> российскую СУБД</h2>    
             </div>
             <img class="elephant" width="750" height="650" src ="/images/elephant.png">
@@ -41,16 +46,40 @@
     </div>
 
     <div style="height: 50px;"></div>
-
-    <!-- НАЧАЛА ПЕРВОЙ СЕКЦИИ -->
+    
+    <!-- НАЧАЛО ПЕРВОЙ СЕКЦИИ -->
     <section class="first_section">
-        <div class="container hero_container">
-            <img class="" width="750" height="650" src ="/images/1-1.jpg">
-            
-            <div class="hero_content">
-                <h1>СУБД для высоких нагрузок: Чем Postgres Pro Enterprise отличается от PostgreSQL</h1>
-                <h3>Postgres Pro — российская СУБД для enterprise-задач. Среди заказчиков системы — РЖД, «Росатом», «Газпромнефть», ФНС, Федеральное казначейство, МИД, Гознак, Росфинмониторинг, а также крупнейшие частные компании России из списка «РБК 500». За что они выбрали систему и почему предпочли ее открытой СУБД PostgreSQL?</h3>    
+        <div class="first_section">
+            <a name="articles"></a>
+            <h1>
+                Почему выбирают Postgres Pro
+            </h1>
+            <div class="article">
+            <img class="article_img" src ="/images/1-1.jpg">
+                <div>
+                    <h1>СУБД для высоких нагрузок: Чем Postgres Pro Enterprise отличается от PostgreSQL</h1>
+                    <h3>Postgres Pro — российская СУБД для enterprise-задач. Среди заказчиков системы — РЖД, «Росатом», «Газпромнефть», ФНС, Федеральное казначейство, МИД, Гознак, Росфинмониторинг, а также крупнейшие частные компании России из списка «РБК 500». За что они выбрали систему и почему предпочли ее открытой СУБД PostgreSQL?</h3>    
+                    <button type="button">Читать</button>
+                </div>
             </div>
+            <div class="article">
+                <img class="article_img" src ="/images/2-1.jpg">
+                    <div>
+                        <h1>Облегченная миграция с Oracle: как быстрее перейти на новую СУБД</h1>
+                        <h3>После ухода Oracle вопрос миграции на отечественные СУБД стал еще более острым. Oracle и PostgreSQL сильно отличаются — перевод баз данных с одной СУБД на другую отнимает большое количество времени и денег, а также создает дополнительные риски. Чтобы провести миграцию проще и быстрее, в Postgres Pro под руководством команды опытных ораклистов разработали целый ряд функций и дополнений.</h3>    
+                        <button type="button">Читать</button>
+                    </div>
+                </div>
+                
+                <div class="article">
+            <img class="article_img" src ="/images/3-1.png">
+                <div>
+                    <h1>Отказоустойчивый кластер Postgres Pro «из коробки»: как работает BiHA</h1>
+                    <h3>Высокая отказоустойчивость — базовое требование к СУБД в business-critical системах. Однако в экосистеме открытой СУБД PostgreSQL не существует стандартного, единственного рекомендованного решения для обеспечения отказоустойчивости. В ответ на запросы заказчиков команда Postgres Professional разработала собственную систему управления отказоустойчивым кластером Postgres Pro.</h3>    
+                    <button type="button">Читать</button>
+                </div>
+            </div>
+            
         </div>
     </section>
 

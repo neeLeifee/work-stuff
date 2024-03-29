@@ -35,9 +35,17 @@ body{
     justify-content: center;
 }
 
-.square{
-    top: 0;
+.square_div{
     position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.square{
+    max-width: 1700px;
 }
 
 .header_bar {
@@ -78,7 +86,8 @@ body{
     left: 0;
     right: 0;
     height: 80%;
-    background-color: #0575d5;
+    background-image: linear-gradient(to right, #0575d5, #021b79);
+    z-index: -5;
 }
 
 .hero_container {
@@ -88,12 +97,15 @@ body{
 }
 
 .hero_content{
+    margin-left: 100px;
     position: relative;
+    z-index: 20;
 }
 
 .elephant{
     position: relative;
-    left:80px
+    left:80px;
+    z-index: 5;
 }
 
 .first_section{
@@ -108,14 +120,6 @@ body{
     margin: 0 auto;
 }
 
-.first_section_container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
 .article {
     display: flex;
     justify-content: center;
@@ -126,4 +130,23 @@ body{
     border-radius: 10px;
     max-width: 300px;
     object-fit: cover;
+}
+
+.second_section{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 50px;
+    background: blue;
+    padding: 30px 5% 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article_two {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
 }
